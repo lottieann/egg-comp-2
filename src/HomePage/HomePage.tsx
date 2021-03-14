@@ -16,6 +16,7 @@ const HomePageContainer = styled.div`
   background-color: #f2f2f2;
 `
 
+
 const StyledTitle = styled.h1`
   @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
   font-family: 'Balsamiq Sans', Helvetica;
