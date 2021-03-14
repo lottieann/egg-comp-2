@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Dropdown } from './Dropdown'
 
 const Container = styled.div`
-  margin-left: 200px;
+  margin-top: 15vh;
 `
 
 export const Votes = () => {
