@@ -64,7 +64,7 @@ const EntryPhoto = styled.div`
   width: 300px;
   ${(props: { photoUrl: string }) =>
     props.photoUrl && `background-image: url(.${props.photoUrl});`}
-  background-color: lightgray;
+    background-size: 300px;
   border: 2px solid gray;
   padding: 10px;
 `
