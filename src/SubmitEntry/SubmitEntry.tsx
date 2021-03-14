@@ -63,8 +63,8 @@ export const SubmitEntry = () => {
             </ListItem>
             <ListItem>Repeat entries will be disqualified</ListItem>
           </Prerequisites>
-          Voting to take place on Easter Sunday morning. Entries will be
-          available for viewing from Saturday Morning. There are 5 votes per
+          Entries will be
+          available for viewing from Saturday Morning. Voting to take place on Easter Saturday. There are 5 votes per
           person.
           {'\n'}
           The winner will be announced <b>12 noon Easter Sunday</b>
