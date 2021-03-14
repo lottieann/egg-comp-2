@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timings should render Timings correctly 1`] = `
+<div>
+  <h1
+    class=""
+  >
+    Schedule
+  </h1>
+</div>
+`;

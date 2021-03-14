@@ -109,6 +109,15 @@ exports[`NavBar should render NavBar correctly 1`] = `
         <a
           class="c4"
         >
+          Schedule
+        </a>
+      </li>
+      <li
+        class="c2"
+      >
+        <a
+          class="c4"
+        >
           Gallery
         </a>
       </li>

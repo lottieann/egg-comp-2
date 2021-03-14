@@ -21,6 +21,7 @@ exports[`HoldingPage should render HoldingPage correctly on gallery page 1`] = `
 .c0 p {
   font-family: Helvetica;
   font-size: 18px;
+  text-align: center;
 }
 
 <div>
@@ -55,6 +56,7 @@ exports[`HoldingPage should render HoldingPage correctly on voting page 1`] = `
 .c0 p {
   font-family: Helvetica;
   font-size: 18px;
+  text-align: center;
 }
 
 <div>
