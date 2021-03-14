@@ -1,0 +1,64 @@
+{
+  "eggCompetition": [
+    {
+      "entryTitle": "Test Entry",
+      "entryNumber": 0,
+      "image_1": "",
+      "image_2": "",
+      "image_3": "",
+      "vote_1": "",
+      "vote_2": "",
+      "vote_3": "",
+      "vote_4": "",
+      "vote_5": ""
+    },
+    {
+      "entryTitle": "Test Entry 1",
+      "entryNumber": 1,
+      "image_1": "",
+      "image_2": "",
+      "image_3": "",
+      "vote_1": "",
+      "vote_2": "",
+      "vote_3": "",
+      "vote_4": "",
+      "vote_5": ""
+    },
+    {
+      "entryTitle": "Test Entry 2",
+      "entryNumber": 2,
+      "image_1": "",
+      "image_2": "",
+      "image_3": "",
+      "vote_1": "",
+      "vote_2": "",
+      "vote_3": "",
+      "vote_4": "",
+      "vote_5": ""
+    },
+    {
+      "entryTitle": "Test Entry 3",
+      "entryNumber": 3,
+      "image_1": "",
+      "image_2": "",
+      "image_3": "",
+      "vote_1": "",
+      "vote_2": "",
+      "vote_3": "",
+      "vote_4": "",
+      "vote_5": ""
+    },
+    {
+      "entryTitle": "Test Entry 4",
+      "entryNumber": 4,
+      "image_1": "",
+      "image_2": "",
+      "image_3": "",
+      "vote_1": "",
+      "vote_2": "",
+      "vote_3": "",
+      "vote_4": "",
+      "vote_5": ""
+    }
+  ]
+}
