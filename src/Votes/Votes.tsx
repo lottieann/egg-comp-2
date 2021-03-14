@@ -6,6 +6,9 @@ import { Dropdown } from './Dropdown'
 
 const Container = styled.div`
   margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Votes = () => {
@@ -19,21 +22,32 @@ export const Votes = () => {
     'Okay, I guess...',
   ]
 
+
   return (
-    <React.Fragment>
-      <Container>
-        <p>
-          You get <b>5</b> votes, use them wisely!
-        </p>
+    <Container>
+    <p>Voting will open on Easter Satruday</p>
+        {/* <React.Fragment>
+          <p>WHAT {process.env.OFFICIAL_SITE}</p>
+          <p>
+            You get <b>5</b> votes, use them wisely!
+          </p>
 
-        <form >
-          {labels.map((label, index) => {
-            return <Dropdown options={images} data-testid="" label={label} key={index} />
-          })}
+          <form>
+            {labels.map((label, index) => {
+              return (
+                <Dropdown
+                  options={images}
+                  data-testid=""
+                  label={label}
+                  key={index}
+                />
+              )
+            })}
 
-          <input type="submit" />
-        </form>
-      </Container>
-    </React.Fragment>
+            <input type="submit" />
+          </form>
+        </React.Fragment>
+      ) */}
+    </Container>
   )
 }

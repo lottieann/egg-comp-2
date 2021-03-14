@@ -77,8 +77,9 @@ export const Entries = (props: EntriesProps) => {
 
   return (
     <Container>
-      <h1>Select an entry to view</h1>
-      <ul>{makeEntriesList(props.entries)}</ul>
+         <p>Entries will be able to view on Easter Satruday</p>
+      {/* <h1>Select an entry to view</h1>
+      <ul>{makeEntriesList(props.entries)}</ul> */}
     </Container>
   )
 }
