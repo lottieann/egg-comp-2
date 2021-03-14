@@ -6,10 +6,6 @@ exports[`HomePage should render homepage correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justidy-content: center;
-  -ms-flex-pack: center;
-  justidy-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -23,13 +19,24 @@ exports[`HomePage should render homepage correctly 1`] = `
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  background-color: #f2f2f2;
 }
 
 .c1 {
+  margin-top: 15vh;
+}
+
+.c2 {
   font-family: 'Balsamiq Sans',Helvetica;
   font-size: 21px;
   color: black;
-  margin-top: 15vh;
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    background-size: cover;
+  }
 }
 
 <div>
@@ -37,11 +44,15 @@ exports[`HomePage should render homepage correctly 1`] = `
     class="c0"
     data-testid="homepage-background"
   >
-    <h1
+    <div
       class="c1"
     >
-      Welcome to Easter Egg Competition 2021
-    </h1>
+      <h1
+        class="c2"
+      >
+        Welcome to Easter Egg Competition 2021
+      </h1>
+    </div>
   </div>
 </div>
 `;
