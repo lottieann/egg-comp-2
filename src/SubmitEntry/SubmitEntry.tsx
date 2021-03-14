@@ -25,6 +25,7 @@ const Message = styled.p`
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   line-height: 150%;
+  margin: 0;
 `
 
 const Prerequisites = styled.ul`
