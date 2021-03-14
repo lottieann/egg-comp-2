@@ -76,14 +76,16 @@ export const PhotoCarousel = () => {
   //const images = [`${props.photoInfo.photo1}`, `${props.photoInfo.photo2}`, `${props.photoInfo.photo3}`]
 
   const images = [
-    '/tigerKing.jpg',
-    '/feathers.jpg',
-    '/plane.jpg',
-    '/beautySalon.jpg',
-    '/grenade.jpg',
-    '/eggcalibur.jpg',
-    '/boot.jpg',
+    '/images/TigerKing.jpg',
+    '/images/Feathers.jpg',
+    '/images/Plane.jpg',
+    '/images/BeautySalon.jpg',
+    '/images/Grenade.jpg',
+    '/images/Eggcalibur.jpg',
+    '/images/Boot.jpg',
   ]
+
+  console.log(`.${images[1]}`)
 
   return (
     <Container>

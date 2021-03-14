@@ -8,7 +8,7 @@ const HomePageContainer = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  background-image: url('./BreakOut.jpg');
+  background-image: url('./images/BreakOut.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
