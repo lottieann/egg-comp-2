@@ -13,6 +13,7 @@ const HomePageContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  background-color: #f2f2f2;
 `
 
 const StyledTitle = styled.h1`
