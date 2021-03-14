@@ -28,7 +28,7 @@ exports[`SubmitEntry should render SubmitEntry correctly 1`] = `
   background-color: rgba(255,255,255,0.7);
   padding: 20px;
   line-height: 150%;
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 
 .c4 {
@@ -103,7 +103,7 @@ exports[`SubmitEntry should render SubmitEntry correctly 1`] = `
             Repeat entries will be disqualified
           </li>
         </ul>
-        Voting to take place on Easter Sunday morning. Entries will be available for viewing from Saturday Morning. There are 5 votes per person.
+        Entries will be available for viewing from Saturday Morning. Voting to take place on Easter Saturday. There are 5 votes per person.
         
 
         The winner will be announced 

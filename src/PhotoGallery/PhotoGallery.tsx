@@ -42,7 +42,7 @@ export const PhotoGallery = (props: PhotoGalleryProps) => {
         </Link>
         <Title>Entry {props.entries[index]['entryNumber']}</Title>
       </TitleWrapper>
-      <PhotoCarousel photoInfo={props.entries[index]} />
+      <PhotoCarousel />
     </Container>
   )
 }

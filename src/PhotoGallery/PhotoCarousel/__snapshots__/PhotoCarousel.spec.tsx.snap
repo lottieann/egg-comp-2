@@ -11,10 +11,13 @@ exports[`PhotoCarousel should render PhotoCarousel correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 20vh;
 }
 
 .c3 {
-  border: 2px solid red;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
 }
 
 .c1 {
@@ -38,7 +41,9 @@ exports[`PhotoCarousel should render PhotoCarousel correctly 1`] = `
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
   border-left: 30px solid grey;
+  border-right: transparent;
   background-color: transparent;
+  margin-left: 10px;
 }
 
 .c2 {
@@ -68,7 +73,7 @@ exports[`PhotoCarousel should render PhotoCarousel correctly 1`] = `
             alt=""
             aria-hidden="true"
             role="presentation"
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
             style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
           />
         </div>

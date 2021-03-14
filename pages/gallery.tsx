@@ -1,13 +1,13 @@
 import * as React from 'react'
-import { HoldingPage } from '../src/HoldingPage'
 
 import { NavBar } from '../src/NavBar'
+import { PhotoCarousel } from '../src/PhotoGallery/PhotoCarousel'
 
 const Gallery = () => {
   return (
     <React.Fragment>
       <NavBar currentPage="Gallery" />
-      <HoldingPage page="Entries" />
+      <PhotoCarousel/>
     </React.Fragment>
   )
 }

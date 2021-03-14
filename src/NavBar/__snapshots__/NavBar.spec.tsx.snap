@@ -38,7 +38,7 @@ exports[`NavBar should render NavBar correctly 1`] = `
   list-style-type: none;
   margin: 10px;
   padding: 0;
-  width: 35vw;
+  width: 45vw;
 }
 
 .c2 {
@@ -100,7 +100,7 @@ exports[`NavBar should render NavBar correctly 1`] = `
         <a
           class="c4"
         >
-          Submit
+          Schedule
         </a>
       </li>
       <li
@@ -109,7 +109,7 @@ exports[`NavBar should render NavBar correctly 1`] = `
         <a
           class="c4"
         >
-          Schedule
+          Submit
         </a>
       </li>
       <li

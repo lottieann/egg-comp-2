@@ -1,11 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Timings should render Timings correctly 1`] = `
+.c0 {
+  margin-top: 20vh;
+}
+
+.c0 p {
+  font-family: Helvetica;
+  text-align: center;
+}
+
 <div>
-  <h1
-    class=""
+  <div
+    class="c0"
   >
-    Schedule
-  </h1>
+    <p>
+      Entries submitted by 6pm Good Friday, see
+       
+      <b>
+        <a
+          href="/submit"
+        >
+          submit page
+        </a>
+      </b>
+      .
+    </p>
+    <p>
+      Gallery and voting available from Easter Saturday AM.
+    </p>
+    <p>
+      Voting closes 6pm Easter Saturday
+    </p>
+    <p>
+      Winners to be announced on Zoom at Easter Sunday noon GMT.
+    </p>
+  </div>
 </div>
 `;
