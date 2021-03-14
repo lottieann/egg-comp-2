@@ -28,7 +28,7 @@ const StyledList = styled.ul`
   list-style-type: none;
   margin: 10px;
   padding: 0;
-  width: 35vw;
+  width: 45vw;
 
   @media screen and (max-width: 600px) {
     width: 100vw;
@@ -66,16 +66,16 @@ export const NavBar = (props: NavBarProps) => {
           </Link>
         </StyledListItem>
         <StyledListItem>
-          <Link href="/submit">
-            <StyledAnchor currentPage={props.currentPage === 'Submit'}>
-              Submit
+          <Link href="/schedule">
+            <StyledAnchor currentPage={props.currentPage === 'Schedule'}>
+              Schedule
             </StyledAnchor>
           </Link>
         </StyledListItem>
         <StyledListItem>
-          <Link href="/schedule">
-            <StyledAnchor currentPage={props.currentPage === 'Schedule'}>
-              Schedule
+          <Link href="/submit">
+            <StyledAnchor currentPage={props.currentPage === 'Submit'}>
+              Submit
             </StyledAnchor>
           </Link>
         </StyledListItem>
