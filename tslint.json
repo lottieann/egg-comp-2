@@ -1,0 +1,36 @@
+{
+    "extends": [
+      "tslint-config-airbnb",
+      "tslint-config-prettier",
+      "tslint-react-a11y",
+      "tslint-react-hooks"
+    ],
+    "rules": {
+      "variable-name": [
+        false,
+        "check-format",
+        "allow-leading-underscore",
+        "ban-keywords"
+      ],
+      "import-name": false,
+      "no-boolean-literal-compare": false,
+      "no-console": [true, "log"],
+      "react-a11y-titles": false,
+      "no-duplicate-imports": [
+        true,
+        {
+          "allow-namespace-imports": true
+        }
+      ],
+      "react-hooks-nesting": {
+        "severity": "off",
+        "options": {
+          "detect-hooks-from-non-react-namespace": true
+        }
+      }
+    },
+    "linterOptions": {
+      "exclude": ["node_modules", "**/generated/**"]
+    }
+  }
+  
