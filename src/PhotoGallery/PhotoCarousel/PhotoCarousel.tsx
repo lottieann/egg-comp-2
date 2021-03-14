@@ -31,6 +31,7 @@ const PhotoContainer = styled.div`
   justify-content: center;
   align-items: center;
 `
+const Photo = styled.div``
 
 const NextButton = styled.button`
   width: 0;
@@ -59,9 +60,10 @@ const ButtonSpace = styled.div`
   background-color: transparent;
 `
 
-const EntryPhoto = styled.div`
+const EntryPhoto = styled.div<{ photoUrl: string }>`
   height: 300px;
   width: 300px;
+  ${(props) => props.photoUrl && `background-image: url(.${props.photoUrl});`}
   background-color: lightgray;
   border: 2px solid gray;
   padding: 10px;
@@ -71,10 +73,17 @@ export const PhotoCarousel = () => {
   const [photoIndex, setPhotoIndex] = React.useState(0)
   const [isError, setIsError] = React.useState(false)
 
+  //const images = [`${props.photoInfo.photo1}`, `${props.photoInfo.photo2}`, `${props.photoInfo.photo3}`]
 
-//const images = [`${props.photoInfo.photo1}`, `${props.photoInfo.photo2}`, `${props.photoInfo.photo3}`]
-
-const images = ['/tigerKing.jpg', '/feathers.jpg', '/plane.jpg', '/beautySalon.jpg', '/grenade.jpg', '/eggcalibur.jpg', '/boot.jpg']
+  const images = [
+    '/tigerKing.jpg',
+    '/feathers.jpg',
+    '/plane.jpg',
+    '/beautySalon.jpg',
+    '/grenade.jpg',
+    '/eggcalibur.jpg',
+    '/boot.jpg',
+  ]
 
   return (
     <Container>
@@ -88,7 +97,7 @@ const images = ['/tigerKing.jpg', '/feathers.jpg', '/plane.jpg', '/beautySalon.j
           />
         )}
         {isError ? (
-          <EntryPhoto />
+          <EntryPhoto photoUrl={images[photoIndex]} />
         ) : (
           <Image
             data-testid={`image-${photoIndex}`}
@@ -108,7 +117,10 @@ const images = ['/tigerKing.jpg', '/feathers.jpg', '/plane.jpg', '/beautySalon.j
           />
         )}
       </PhotoContainer>
-      <p>Please enjoy some photos from previous years. Return here Easter Saturday to see 2021 hopefuls!</p>
+      <p>
+        Please enjoy some photos from previous years. Return here Easter
+        Saturday to see 2021 hopefuls!
+      </p>
     </Container>
   )
 }
