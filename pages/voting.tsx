@@ -1,13 +1,14 @@
 import * as React from 'react'
+import { HoldingPage } from '../src/HoldingPage'
 
 import { NavBar } from '../src/NavBar'
-import { Votes } from '../src/Votes'
+
 
 const Voting = () => {
   return (
     <React.Fragment>
       <NavBar currentPage="Vote"/>
-      <Votes />
+     <HoldingPage page="Votes" />
     </React.Fragment>
   )
 }
