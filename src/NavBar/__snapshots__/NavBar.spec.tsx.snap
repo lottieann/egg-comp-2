@@ -15,7 +15,7 @@ exports[`NavBar should render NavBar correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: rgba(205,202,202,0.3);
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   position: absolute;
   z-index: 20;
@@ -69,6 +69,12 @@ exports[`NavBar should render NavBar correctly 1`] = `
 
 .c4:hover {
   font-weight: 900;
+}
+
+@media screen and (max-width:600px) {
+  .c1 {
+    width: 100vw;
+  }
 }
 
 <div>

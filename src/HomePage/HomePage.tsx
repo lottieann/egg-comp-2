@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 const HomePageContainer = styled.div`
   display: flex;
-  justidy-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
@@ -13,6 +12,14 @@ const HomePageContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  background-color: #f2f2f2;
+
+  @media screen and (max-width: 600px) {
+    background-size: cover;
+  }
+`
+const WelcomeWrapper = styled.div`
+  margin-top: 15vh;
 `
 
 const StyledTitle = styled.h1`
@@ -20,13 +27,15 @@ const StyledTitle = styled.h1`
   font-family: 'Balsamiq Sans', Helvetica;
   font-size: 21px;
   color: black;
-  margin-top: 15vh;
+  text-align: center;
 `
 
 export const HomePage = () => {
   return (
     <HomePageContainer data-testid="homepage-background">
-      <StyledTitle>Welcome to Easter Egg Competition 2021</StyledTitle>
+      <WelcomeWrapper>
+        <StyledTitle>Welcome to Easter Egg Competition 2021</StyledTitle>
+      </WelcomeWrapper>
     </HomePageContainer>
   )
 }

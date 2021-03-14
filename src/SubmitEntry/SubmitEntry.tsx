@@ -3,7 +3,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-margin-top: 15vh;
+  margin-top: 15vh;
   width: 100%;
   height: 100%;
   display: flex;
@@ -13,17 +13,27 @@ margin-top: 15vh;
 
 const MessageWrapper = styled.div`
   width: 50vw;
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+  }
 `
 
 const Message = styled.p`
-font-family: Helvetica,
-font-size: 16px;
-background-color: rgba(255, 255, 255, 0.7);
-padding: 20px;`
+  font-family: Helvetica;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  line-height: 150%;
+`
 
-const Prerequisites = styled.ul``
+const Prerequisites = styled.ul`
+  padding-left: 20px;
+`
 
-const ListItem = styled.li``
+const ListItem = styled.li`
+  margin: 0;
+`
 
 const Email = styled.p`
   display: flex;
@@ -37,24 +47,25 @@ export const SubmitEntry = () => {
     <Container data-testid="submit-entry-container">
       <MessageWrapper>
         <Message>
-          Egg entry photos and videos to be submitted by <b>3pm Good Friday</b>.
+          Please submit your entries by <b>3pm Good Friday</b>, stating who has
+          entered which egg, to:
           {'\n'}
+          <Email>eastereggcompetition@gmail.com</Email>
           <Prerequisites>
             <ListItem>
-              Photos and videos must be <b>portrait</b>
+              Photos and videos must be <b>landscape</b>
             </ListItem>
             <ListItem>
               Only a total of 3 photos and videos, e.g. 1 video &#38; 2 photos
               OR 3 photos
             </ListItem>
             <ListItem>Repeat entries will be disqualified</ListItem>
-            <ListItem>Katie Bradley you are banned</ListItem>
           </Prerequisites>
-          Please submit your entries, clearly stating who has entered which egg,
-          to:
-          <Email>eastereggcompetition@gmail.com</Email>
-          Please return to this website on Easter Saturday to view and vote for
-          your favourite entries.
+          Voting to take place on Easter Sunday morning. Entries will be
+          available for viewing from Saturday Morning. There are 5 votes per
+          person.
+          {'\n'}
+          The winner will be announced <b>12 noon Easter Sunday</b>
         </Message>
       </MessageWrapper>
     </Container>

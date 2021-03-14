@@ -13,7 +13,7 @@ const StyledContainer = styled.nav`
   justify-content: center;
   align-items: center;
   background-color: rgba(205, 202, 202, 0.3);
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   position: absolute;
   z-index: 20;
@@ -29,6 +29,10 @@ const StyledList = styled.ul`
   margin: 10px;
   padding: 0;
   width: 35vw;
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+  }
 `
 const StyledListItem = styled.li`
   padding: 15px;
