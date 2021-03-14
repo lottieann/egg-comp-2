@@ -73,6 +73,13 @@ export const NavBar = (props: NavBarProps) => {
           </Link>
         </StyledListItem>
         <StyledListItem>
+          <Link href="/schedule">
+            <StyledAnchor currentPage={props.currentPage === 'Schedule'}>
+              Schedule
+            </StyledAnchor>
+          </Link>
+        </StyledListItem>
+        <StyledListItem>
           <Link href="/gallery">
             <StyledAnchor currentPage={props.currentPage === 'Gallery'}>
               Gallery
