@@ -31,7 +31,6 @@ const PhotoContainer = styled.div`
   justify-content: center;
   align-items: center;
 `
-const Photo = styled.div``
 
 const NextButton = styled.button`
   width: 0;
@@ -60,10 +59,11 @@ const ButtonSpace = styled.div`
   background-color: transparent;
 `
 
-const EntryPhoto = styled.div<{ photoUrl: string }>`
+const EntryPhoto = styled.div`
   height: 300px;
   width: 300px;
-  ${(props) => props.photoUrl && `background-image: url(.${props.photoUrl});`}
+  ${(props: { photoUrl: string }) =>
+    props.photoUrl && `background-image: url(.${props.photoUrl});`}
   background-color: lightgray;
   border: 2px solid gray;
   padding: 10px;
