@@ -18,6 +18,11 @@ exports[`HoldingPage should render HoldingPage correctly on gallery page 1`] = `
   align-items: center;
 }
 
+.c0 p {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
 <div>
   <div
     class="c0"
@@ -45,6 +50,11 @@ exports[`HoldingPage should render HoldingPage correctly on voting page 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c0 p {
+  font-family: Helvetica;
+  font-size: 18px;
 }
 
 <div>

@@ -2,8 +2,6 @@ import * as React from 'react'
 
 import Link from 'next/link'
 
-import { useMediaQuery } from 'react-responsive'
-
 import styled from 'styled-components'
 
 export interface NavBarProps {
@@ -21,7 +19,6 @@ const StyledContainer = styled.nav`
   z-index: 20;
   top: 0;
   left: 0;
-  
 `
 
 const StyledList = styled.ul`
@@ -50,20 +47,11 @@ const StyledAnchor = styled.a`
     font-weight: 900;
   }
 
-
-
   ${(props: { currentPage: boolean }) =>
     props.currentPage ? 'text-decoration: underline;' : null}
 `
 
 export const NavBar = (props: NavBarProps) => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-device-width: 1224px)',
-  })
-  const isTabletOrMobile = useMediaQuery({
-    query: '(max-device-width: 1224px)',
-  })
-
   return (
     <StyledContainer>
       <StyledList>
