@@ -8,6 +8,7 @@ const HomePageContainer = styled.div`
   justidy-content: center;
   align-items: center;
   flex-direction: column;
+  border: 2px solid red;
 `
 
 const StyledTitle = styled.h1`
