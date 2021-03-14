@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "pretty": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "jsx": "preserve",
+    "sourceMap": false,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "dom",
+      "esnext",
+      "es2017"
+    ],
+    "esModuleInterop": true // https://stackoverflow.com/questions/55583270/typeerror-cannot-read-property-render-of-undefined-in-jest-test-using-reactdo
+    ,
+    "target": "es5",
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "types": ["jest"],
+    "typeRoots": ["./types", "./node_modules/@types"]
+  },
+  "filesGlob": [
+    "**/**/*.ts",
+    "**/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    ".next",
+    "**/**/out/*",
+    "**/**/*.js",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+  "rules": {
+    "no-console": false
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "./src/**/*.tsx", "./src/**/*.ts"
+, "utils/dbConnect.js", "next.config.js"  ]
+}

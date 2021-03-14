@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubmitEntry should render SubmitEntry correctly 1`] = `
+.c0 {
+  margin-top: 15vh;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c1 {
+  width: 50vw;
+}
+
+.c2 {
+  font-family: Helvetica,font-size:16px;
+  background-color: rgba(255,255,255,0.7);
+  padding: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="submit-entry-container"
+  >
+    <div
+      class="c1"
+    >
+      <p
+        class="c2"
+      >
+        Egg entry photos and videos to be submitted by 
+        <b>
+          3pm Good Friday
+        </b>
+        .
+        
+
+        <ul
+          class=""
+        >
+          <li
+            class=""
+          >
+            Photos and videos must be 
+            <b>
+              portrait
+            </b>
+          </li>
+          <li
+            class=""
+          >
+            Only a total of 3 photos and videos, e.g. 1 video & 2 photos OR 3 photos
+          </li>
+          <li
+            class=""
+          >
+            Repeat entries will be disqualified
+          </li>
+          <li
+            class=""
+          >
+            Katie Bradley you are banned
+          </li>
+        </ul>
+        Please submit your entries, clearly stating who has entered which egg, to:
+        <p
+          class="c3"
+        >
+          eastereggcompetition@gmail.com
+        </p>
+        Please return to this website on Easter Saturday to view and vote for your favourite entries.
+      </p>
+    </div>
+  </div>
+</div>
+`;

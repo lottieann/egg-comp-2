@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar should render NavBar correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(205,202,202,0.3);
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  width: 35vw;
+}
+
+.c2 {
+  padding: 15px;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3:hover {
+  font-weight: 900;
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.c4:hover {
+  font-weight: 900;
+}
+
+<div>
+  <nav
+    class="c0"
+  >
+    <ul
+      class="c1"
+    >
+      <li
+        class="c2"
+      >
+        <a
+          class="c3"
+          data-testid="homepage-link"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        class="c2"
+      >
+        <a
+          class="c4"
+        >
+          Submit
+        </a>
+      </li>
+      <li
+        class="c2"
+      >
+        <a
+          class="c4"
+        >
+          Gallery
+        </a>
+      </li>
+      <li
+        class="c2"
+      >
+        <a
+          class="c4"
+        >
+          Vote!
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
