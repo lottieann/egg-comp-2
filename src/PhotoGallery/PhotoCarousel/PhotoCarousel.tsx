@@ -21,11 +21,11 @@ const Container = styled.div`
   }
 `
 
-const StyledImage = styled(Image)`
-  height: 300px;
-  width: 300px;
-  padding: 10px;
-`
+// const StyledImage = styled(Image)`
+//   height: 300px;
+//   width: 300px;
+//   padding: 10px;
+// `
 const PhotoContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -90,7 +90,7 @@ const images = ['/tigerKing.jpg', '/feathers.jpg', '/plane.jpg', '/beautySalon.j
         {isError ? (
           <EntryPhoto />
         ) : (
-          <StyledImage
+          <Image
             data-testid={`image-${photoIndex}`}
             src={`${images[photoIndex]}`}
             alt={`egg-${photoIndex}`}
