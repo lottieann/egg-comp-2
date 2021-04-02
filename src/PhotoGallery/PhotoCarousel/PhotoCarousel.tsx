@@ -73,8 +73,6 @@ export const PhotoCarousel = () => {
   const [photoIndex, setPhotoIndex] = React.useState(0)
   const [isError, setIsError] = React.useState(false)
 
-  //const images = [`${props.photoInfo.photo1}`, `${props.photoInfo.photo2}`, `${props.photoInfo.photo3}`]
-
   const images = [
     '/images/TigerKing.jpg',
     '/images/Feathers.jpg',
@@ -84,8 +82,6 @@ export const PhotoCarousel = () => {
     '/images/Eggcalibur.jpg',
     '/images/Boot.jpg',
   ]
-
-  console.log(`.${images[1]}`)
 
   return (
     <Container>

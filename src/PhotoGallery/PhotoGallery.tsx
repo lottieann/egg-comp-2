@@ -1,12 +1,18 @@
-import Link from 'next/link'
 import * as React from 'react'
 
+import Link from 'next/link'
+import Image from 'next/image'
+
 import styled from 'styled-components'
-import { PhotoCarousel } from './PhotoCarousel'
 
 export interface PhotoGalleryProps {
-  entries: any,
-  entryIndex: any
+  entryNumber: number;
+  title: string;
+  thumbnail: string;
+  photo1?: string;
+  photo2?: string;
+  photo3?: string;
+  videoLink?: string;
 }
 
 const Container = styled.div`
@@ -32,17 +38,44 @@ const StyledAnchor = styled.a`
   cursor: pointer;
 `
 
+const PhotoContainer = styled.div`
+  dispaly: flex;
+  flex-directon: column;
+`
+
+const PhotoWrapper = styled.div`
+  height: 20vh;
+  width: 30vh;
+  margin: 5vh;
+`
+
 export const PhotoGallery = (props: PhotoGalleryProps) => {
-  const index = parseInt(props.entryIndex.entry)
+  const getPhoto = (photoSrc: string) => {
+    return (
+      <PhotoWrapper>
+        <Image
+          src={`${photoSrc}`}
+          alt={`${props.title}`}
+          width={300}
+          height={300}
+        />
+      </PhotoWrapper>
+    )
+  }
+
   return (
     <Container>
       <TitleWrapper>
         <Link href="/gallery">
           <StyledAnchor>Return to Gallery</StyledAnchor>
         </Link>
-        <Title>Entry {props.entries[index]['entryNumber']}</Title>
+        <Title>Entry {props.title}</Title>
       </TitleWrapper>
-      <PhotoCarousel />
+      <PhotoContainer>
+        {props.photo1 && getPhoto(props.photo1)}
+        {props.photo2 && getPhoto(props.photo2)}
+        {props.photo3 && getPhoto(props.photo3)}
+      </PhotoContainer>
     </Container>
   )
 }

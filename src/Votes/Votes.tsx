@@ -2,52 +2,135 @@ import * as React from 'react'
 
 import styled from 'styled-components'
 
-//import { Dropdown } from './Dropdown'
+import { Dropdown } from './Dropdown'
+import { Input } from './Input'
+import { VotesData } from './types'
 
 const Container = styled.div`
   margin-top: 15vh;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
 `
 
 export const Votes = () => {
-  // const images: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  const [formData, setFormData] = React.useState({
+    name: '',
+    email: '',
+    first: '1',
+    second: '2',
+    third: '3',
+    fourth: '4',
+    fifth: '5',
+  })
 
-  // const labels = [
-  //   'My favourite',
-  //   'I loved this',
-  //   'This too',
-  //   'I thought this was good',
-  //   'Okay, I guess...',
-  // ]
+  const [hasSubmitted, setHasSubmitted] = React.useState(false)
+  const [validated, setValidated] = React.useState(false)
 
+  const submitForm = (data: VotesData) => {
+    // fetch('/api/votes', {
+    //   method: 'post',
+    //   headers: {
+    //     Accept: 'application/json, text/plain, */*',
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(data),
+    // }).then((res) => {
+    //   res.status === 200 ? setHasSubmitted(true) : ''
+    // })
+    console.log(data)
+    setHasSubmitted(true)
+  }
+
+  const validateForm = () => {
+    const sameEgg =
+      formData.first ===
+        (formData.second ||
+          formData.third ||
+          formData.fourth ||
+          formData.fifth) ||
+      formData.second ===
+        (formData.third || formData.fourth || formData.fifth) ||
+      formData.third === (formData.fourth || formData.fifth) ||
+      formData.fourth === formData.fifth
+
+    if (formData.name === '') {
+      alert('Please enter your name')
+    }
+    if (formData.email === '') {
+      alert('Please enter an email address')
+    }
+    if (sameEgg) {
+      alert('Please choose different eggs for each of your favourites')
+    } else {
+      setValidated(true)
+    }
+  }
+
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }))
+  }
+
+  const options = ['Select an egg', '1', '2', '3', '4', '5']
+  const labels = {
+    first: 'My favourite egg was:',
+    second: 'My second favourite egg was:',
+    third: 'My third favourite egg was:',
+    fourth: 'My fourth favourite egg was:',
+    fifth: 'My fifth favourite egg was:',
+  }
+
+  const eggOptions = () => {
+    return Object.entries(labels).map(([place, text], index) => {
+      return (
+        <Dropdown
+          options={options}
+          label={text}
+          key={index}
+          onChange={handleChange}
+          name={place}
+        />
+      )
+    })
+  }
+
+  const refreshPage = () => {
+    window.location.reload()
+  }
+
+  const Submitted = () => {
+    return (
+      <React.Fragment>
+        <p>Thank you {formData.name} for submitting your vote!</p>
+        <button
+          data-testid="reload-button"
+          onClick={refreshPage}
+          onKeyDown={(e: React.KeyboardEvent) =>
+            e.key === 'Enter' && refreshPage()
+          }
+        >
+          Click here to allow someone else to vote
+        </button>
+      </React.Fragment>
+    )
+  }
 
   return (
     <Container>
-    <p>Voting will open on Easter Satruday</p>
-        {/* <React.Fragment>
-          <p>WHAT {process.env.OFFICIAL_SITE}</p>
-          <p>
-            You get <b>5</b> votes, use them wisely!
-          </p>
 
-          <form>
-            {labels.map((label, index) => {
-              return (
-                <Dropdown
-                  options={images}
-                  data-testid=""
-                  label={label}
-                  key={index}
-                />
-              )
-            })}
-
-            <input type="submit" />
-          </form>
-        </React.Fragment>
-      ) */}
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdJKFyzMuUCj0dnoYSt-QUIgMlDnIWDuTno4cyZqPCjAme_kg/viewform?embedded=true"
+        width="640"
+        height="1515"
+        frameBorder="0"
+      >
+        Loading…
+      </iframe>
     </Container>
   )
 }

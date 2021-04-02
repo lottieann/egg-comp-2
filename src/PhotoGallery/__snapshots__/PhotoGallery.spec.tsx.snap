@@ -11,13 +11,16 @@ exports[`PhotoGallery should render PhotoGallery correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 20vh;
 }
 
-.c7 {
-  height: 300px;
-  width: 300px;
-  padding: 10px;
+.c4 p {
+  font-family: Helvetica;
+  font-size: 18px;
+  text-align: center;
 }
 
 .c5 {
@@ -35,7 +38,7 @@ exports[`PhotoGallery should render PhotoGallery correctly 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c7 {
   width: 0;
   height: 0;
   border-top: 30px solid transparent;
@@ -137,7 +140,6 @@ exports[`PhotoGallery should render PhotoGallery correctly 1`] = `
           </div>
           <img
             alt="egg-0"
-            class="c7"
             data-testid="image-0"
             decoding="async"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -145,10 +147,13 @@ exports[`PhotoGallery should render PhotoGallery correctly 1`] = `
           />
         </div>
         <button
-          class="c8"
+          class="c7"
           data-testid="next-button"
         />
       </div>
+      <p>
+        Please enjoy some photos from previous years. Return here Easter Saturday to see 2021 hopefuls!
+      </p>
     </div>
   </div>
 </div>

@@ -3,8 +3,10 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 export interface DropdownProps {
-    options: number[],
-    label: string
+    options: string[],
+    label: string,
+    onChange: (event) => void,
+    name: any
 }
 
 const StyledDropdown = styled.div`
@@ -19,7 +21,7 @@ export const Dropdown = (props: DropdownProps) => {
   return (
     <StyledDropdown>
         <label>{props.label}</label>
-      <StyledSelect defaultValue="hoose your egg">
+      <StyledSelect defaultValue="Choose your egg" onChange={props.onChange} name={props.name}>
         {props.options.map((el, index) => {
           return <option value={el} key={index}>{el}</option>
         })}

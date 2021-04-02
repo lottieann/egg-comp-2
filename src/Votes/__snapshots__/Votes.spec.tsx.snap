@@ -1,8 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Votes should render Votes correctly 1`] = `
+.c4 {
+  width: 200px;
+}
+
+.c5 {
+  width: 150px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.c2 {
+  font-family: Helvetica;
+  margin: 5px;
+}
+
+.c3 {
+  font-family: Helvetica;
+}
+
 .c0 {
   margin-top: 15vh;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,9 +52,258 @@ exports[`Votes should render Votes correctly 1`] = `
   <div
     class="c0"
   >
-    <p>
-      Voting will open on Easter Satruday
-    </p>
+    <form>
+      <div
+        class="c1"
+      >
+        <label
+          class="c2"
+        >
+          Name
+        </label>
+        <input
+          class="c3"
+          name="name"
+          placeholder="Enter your name"
+          required=""
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="c1"
+      >
+        <label
+          class="c2"
+        >
+          Email
+        </label>
+        <input
+          class="c3"
+          name="email"
+          placeholder="Enter an email"
+          required=""
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <label>
+          My favourite egg was:
+        </label>
+        <select
+          class="c5"
+          name="first"
+        >
+          <option
+            value="Select an egg"
+          >
+            Select an egg
+          </option>
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+        </select>
+      </div>
+      <div
+        class="c4"
+      >
+        <label>
+          My second favourite egg was:
+        </label>
+        <select
+          class="c5"
+          name="second"
+        >
+          <option
+            value="Select an egg"
+          >
+            Select an egg
+          </option>
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+        </select>
+      </div>
+      <div
+        class="c4"
+      >
+        <label>
+          My third favourite egg was:
+        </label>
+        <select
+          class="c5"
+          name="third"
+        >
+          <option
+            value="Select an egg"
+          >
+            Select an egg
+          </option>
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+        </select>
+      </div>
+      <div
+        class="c4"
+      >
+        <label>
+          My fourth favourite egg was:
+        </label>
+        <select
+          class="c5"
+          name="fourth"
+        >
+          <option
+            value="Select an egg"
+          >
+            Select an egg
+          </option>
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+        </select>
+      </div>
+      <div
+        class="c4"
+      >
+        <label>
+          My fifth favourite egg was:
+        </label>
+        <select
+          class="c5"
+          name="fifth"
+        >
+          <option
+            value="Select an egg"
+          >
+            Select an egg
+          </option>
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+        </select>
+      </div>
+      <button
+        data-testid="submit-button"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
   </div>
 </div>
 `;
