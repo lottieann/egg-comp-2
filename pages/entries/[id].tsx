@@ -14,19 +14,20 @@ const Gallery = () => {
 
   const entry = entries[`${id}`]
 
-
   return (
     <React.Fragment>
       <NavBar currentPage="Gallery" />
-      <PhotoGallery
-        entryNumber={entry.entryNumber}
-        title={entry.title}
-        thumbnail={entry.thumbnail}
-        photo1={entry.photo1}
-        photo2={entry.photo2}
-        photo3={entry.photo3}
-        videoLink={entry.videoLink}
-      />
+      {entry && (
+        <PhotoGallery
+          entryNumber={entry.entryNumber}
+          title={entry.title}
+          thumbnail={entry.thumbnail}
+          photo1={entry.photo1}
+          photo2={entry.photo2}
+          photo3={entry.photo3}
+          videoLink={entry.videoLink}
+        />
+      )}
     </React.Fragment>
   )
 }

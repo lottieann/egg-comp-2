@@ -1,138 +1,146 @@
-
-{"0":{
+{
+  "0": {
     "entryNumber": 0,
     "title": "Test egg",
     "thumbnail": "",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"1":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "1": {
     "entryNumber": 1,
     "title": "David Chickenson",
-    "thumbnail": "",
+    "thumbnail": "DavidChickenson",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"2":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "2": {
     "entryNumber": 2,
-    "title": "",
-    "thumbnail": "",
-    "photo1": "",
+    "title": "Pfry-zer",
+    "thumbnail": "Pfryzer",
+    "photo1": "Pfryzer",
     "photo2": "",
-    "photo3": ""
-},
-"3":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "3": {
     "entryNumber": 3,
-    "title": "",
-    "thumbnail": "",
+    "title": "The Eggpire Strikes Back",
+    "thumbnail": "TheEggpireStrikesBack",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"4":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "4": {
     "entryNumber": 4,
-    "title": "",
-    "thumbnail": "",
-    "photo1": "",
-    "photo2": "",
-    "photo3": ""
-},
-"5":{
+    "title": "The Eggscape Plan",
+    "thumbnail": "TheEggscapePlan2",
+    "photo1": "TheEggscapePlan2",
+    "photo2": "TheEggscapePlan3",
+    "photo3": "",
+    "videoLink": ""
+  },
+  "5": {
     "entryNumber": 5,
-    "title": "",
-    "thumbnail": "",
-    "photo1": "",
+    "title": "The Dig Eggscavation",
+    "thumbnail": "TheDigEggscavation",
+    "photo1": "TheDigEggscavation",
     "photo2": "",
-    "photo3": ""
-},
-"6":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "6": {
     "entryNumber": 6,
-    "title": "",
-    "thumbnail": "",
-    "photo1": "",
-    "photo2": "",
-    "photo3": ""
-},
-"7":{
+    "title": "Eggloo",
+    "thumbnail": "Eggloo1",
+    "photo1": "Eggloo1",
+    "photo2": "Eggloo2",
+    "photo3": "Eggloo3",
+    "videoLink": ""
+  },
+  "7": {
     "entryNumber": 7,
-    "title": "",
-    "thumbnail": "",
-    "photo1": "",
-    "photo2": "",
-    "photo3": ""
-},
-"8":{
+    "title": "Eggmericas Cup",
+    "thumbnail": "EggmericasCup1",
+    "photo1": "EggmericasCup3",
+    "photo2": "EggmericasCup2",
+    "photo3": "EggmericasCup1",
+    "videoLink": ""
+  },
+  "8": {
     "entryNumber": 8,
-    "title": "",
-    "thumbnail": "",
+    "title": "Mt. Eggverest",
+    "thumbnail": "MtEggverest",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"9":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "9": {
     "entryNumber": 9,
-    "title": "",
-    "thumbnail": "",
+    "title": "Jail Eggsotic",
+    "thumbnail": "JailEggsotic",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"10":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "10": {
     "entryNumber": 10,
-    "title": "",
-    "thumbnail": "",
+    "title": "mEGGerschmitt",
+    "thumbnail": "MEGGerschmitt",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"11":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "11": {
     "entryNumber": 11,
-    "title": "",
-    "thumbnail": "",
-    "photo1": "",
+    "title": "Hennessey",
+    "thumbnail": "Hennessey",
+    "photo1": "Hennessey",
     "photo2": "",
-    "photo3": ""
-},
-"12":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "12": {
     "entryNumber": 12,
-    "title": "",
-    "thumbnail": "",
+    "title": "Steve Meggqueen",
+    "thumbnail": "SteveMeggqueen",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"13":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "13": {
     "entryNumber": 13,
-    "title": "",
-    "thumbnail": "",
-    "photo1": "",
-    "photo2": "",
-    "photo3": ""
-},
-"14":{
+    "title": "Eggypt in Crisis",
+    "thumbnail": "EggyptInCrisis1",
+    "photo1": "EggyptInCrisis1",
+    "photo2": "EggyptInCrisis2",
+    "photo3": "",
+    "videoLink": ""
+  },
+  "14": {
     "entryNumber": 14,
-    "title": "",
+    "title": "Coque-en-bouche",
     "thumbnail": "",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"15":{
+    "photo3": "",
+    "videoLink": ""
+  },
+  "15": {
     "entryNumber": 15,
-    "title": "",
+    "title": "Search for the Many L-egg-ed Beast",
     "thumbnail": "",
     "photo1": "",
     "photo2": "",
-    "photo3": ""
-},
-"16":{
-    "entryNumber": 16,
-    "title": "",
-    "thumbnail": "",
-    "photo1": "",
-    "photo2": "",
-    "photo3": ""
-}
+    "photo3": "",
+    "videoLink": ""
+  }
 }

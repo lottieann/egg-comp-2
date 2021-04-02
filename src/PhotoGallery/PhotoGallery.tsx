@@ -19,6 +19,8 @@ const Container = styled.div`
   margin-top: 15vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const TitleWrapper = styled.div`
@@ -34,8 +36,10 @@ const Title = styled.h1`
 `
 
 const StyledAnchor = styled.a`
+font-family: Helvetica;
   text-decoration: none;
   cursor: pointer;
+  margin-top: 2vh;
 `
 
 const PhotoContainer = styled.div`
@@ -45,8 +49,8 @@ const PhotoContainer = styled.div`
 `
 
 const PhotoWrapper = styled.div`
-  height: 40vh;
-  width: 60vh;
+  height: 60vh;
+  width: 90vh;
   margin: 5vh;
 `
 
@@ -64,8 +68,8 @@ export const PhotoGallery = (props: PhotoGalleryProps) => {
         <Image
           src={`/images/${photoSrc}.jpg`}
           alt={`${props.title}`}
-          width={600}
-          height={400}
+          width={900}
+          height={600}
         />
       </PhotoWrapper>
     )
@@ -77,7 +81,7 @@ export const PhotoGallery = (props: PhotoGalleryProps) => {
         <Link href="/gallery">
           <StyledAnchor>Return to Gallery</StyledAnchor>
         </Link>
-        <Title>Entry {props.title}</Title>
+        <Title>{props.title}</Title>
       </TitleWrapper>
       <PhotoContainer>
         {props.photo1 && getPhoto(props.photo1)}

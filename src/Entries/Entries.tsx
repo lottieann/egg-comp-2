@@ -40,17 +40,10 @@ const EntryContainer = styled.div`
 
   p {
     font-family: Helvetica;
+    font-weight: bold;
   }
 `
 
-const EntryPhoto = styled.div`
-  height: 150px;
-  width: 225px;
-  background-color: lightgray;
-  border: 2px solid gray;
-`
-
-const StyledImage = styled(Image)``
 
 const StyledAnchor = styled.a`
   text-decoration: none;
@@ -67,16 +60,17 @@ export const Entries = (props: EntriesProps) => {
       <EntryList>
         {Object.values(options).map((el, index) => {
           return (
+             //@ts-ignore
+            el.entryNumber !== 0 &&
             <EntryContainer>
                 <Link href={`/entries/${index}`}>
-                  <StyledImage
+                  <Image
                     data-testid={`image-${index}`}
                     //@ts-ignore
                     src={`/images/${el.thumbnail}.jpg`}
                     alt={`egg-${index}`}
-                    width={225}
-                    height={150}
-                    
+                    width={400}
+                    height={265}
                   />
                 </Link>
               <Link href={`/entries/${index}`}>
