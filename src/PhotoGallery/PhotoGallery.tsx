@@ -46,6 +46,7 @@ const PhotoContainer = styled.div`
   dispaly: flex;
   flex-directon: column;
   justify-content: center;
+  align-items: center;
 `
 
 const PhotoWrapper = styled.div`
@@ -55,8 +56,8 @@ const PhotoWrapper = styled.div`
 `
 
 const VideoWrapper = styled.div`
-  height: 40vh;
-  width: 60vh;
+  height: 60vh;
+  width: 90vh;
   margin: 5vh;
 `
 
@@ -89,7 +90,7 @@ export const PhotoGallery = (props: PhotoGalleryProps) => {
         {props.photo3 && getPhoto(props.photo3)}
         {props.videoLink && (
           <VideoWrapper>
-            <iframe src={props.videoLink} width="30vh" height="20vh"></iframe>
+            <iframe src={props.videoLink} height="412" width="618"></iframe>
           </VideoWrapper>
         )}
       </PhotoContainer>

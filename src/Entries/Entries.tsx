@@ -24,6 +24,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    font-family: Helvetica;
+  }
 `
 
 const EntryList = styled.div`
@@ -33,10 +37,11 @@ const EntryList = styled.div`
 `
 
 const EntryContainer = styled.div`
+  margin: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  cursor: pointer;
 
   p {
     font-family: Helvetica;
