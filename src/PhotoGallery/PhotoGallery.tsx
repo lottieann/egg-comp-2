@@ -16,7 +16,7 @@ export interface PhotoGalleryProps {
 }
 
 const Container = styled.div`
-  margin-left: 200px;
+  margin-top: 15vh;
   display: flex;
   flex-direction: column;
 `
@@ -49,6 +49,12 @@ const PhotoWrapper = styled.div`
   margin: 5vh;
 `
 
+const VideoWrapper = styled.div`
+  height: 20vh;
+  width: 30vh;
+  margin: 5vh;
+`
+
 export const PhotoGallery = (props: PhotoGalleryProps) => {
   const getPhoto = (photoSrc: string) => {
     return (
@@ -75,6 +81,11 @@ export const PhotoGallery = (props: PhotoGalleryProps) => {
         {props.photo1 && getPhoto(props.photo1)}
         {props.photo2 && getPhoto(props.photo2)}
         {props.photo3 && getPhoto(props.photo3)}
+        {props.videoLink && (
+          <VideoWrapper>
+            <iframe src={props.videoLink} width="30vh" height="20vh"></iframe>
+          </VideoWrapper>
+        )}
       </PhotoContainer>
     </Container>
   )

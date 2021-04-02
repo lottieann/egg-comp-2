@@ -57,11 +57,11 @@ const StyledAnchor = styled.a`
   font-weight: bold;
   font-family: Helvetica;
   cursor: pointer;
+  padding: 2vh;
 `
 
 export const Entries = (props: EntriesProps) => {
   const [imageError, setImageError] = React.useState(false)
-console.log(Object.values(props.entries))
 
   const makeEntriesList = (options: Entry) => {
     return (
