@@ -32,7 +32,7 @@ const EntryList = styled.div`
   padding: 20px;
 `
 
-const EntryContaier = styled.div`
+const EntryContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,34 +61,31 @@ const StyledAnchor = styled.a`
 `
 
 export const Entries = (props: EntriesProps) => {
-  const [imageError, setImageError] = React.useState(false)
-
+  
   const makeEntriesList = (options: Entry) => {
     return (
       <EntryList>
         {Object.values(options).map((el, index) => {
-          console.log('el', (el.title))
           return (
-            <EntryContaier key={index}>
-              {imageError ? (
-                <EntryPhoto />
-              ) : (
+            <EntryContainer>
                 <Link href={`/entries/${index}`}>
                   <StyledImage
                     data-testid={`image-${index}`}
-                    src={`/${el.thumbnail}`}
+                    //@ts-ignore
+                    src={`/images/${el.thumbnail}.jpg`}
                     alt={`egg-${index}`}
-                    width={250}
-                    height={250}
-                    onError={() => setImageError(true)}
+                    width={225}
+                    height={150}
+                    
                   />
                 </Link>
-              )}
               <Link href={`/entries/${index}`}>
+              {/* @ts-ignore */}
                 <StyledAnchor>{el.entryNumber}</StyledAnchor>
               </Link>
+              {/* @ts-ignore */}
               <p>{el.title}</p>
-            </EntryContaier>
+            </EntryContainer>
           )
         })}
       </EntryList>

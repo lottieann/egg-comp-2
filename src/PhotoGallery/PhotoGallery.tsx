@@ -41,29 +41,31 @@ const StyledAnchor = styled.a`
 const PhotoContainer = styled.div`
   dispaly: flex;
   flex-directon: column;
+  justify-content: center;
 `
 
 const PhotoWrapper = styled.div`
-  height: 20vh;
-  width: 30vh;
+  height: 40vh;
+  width: 60vh;
   margin: 5vh;
 `
 
 const VideoWrapper = styled.div`
-  height: 20vh;
-  width: 30vh;
+  height: 40vh;
+  width: 60vh;
   margin: 5vh;
 `
 
 export const PhotoGallery = (props: PhotoGalleryProps) => {
+  console.log(props.photo1)
   const getPhoto = (photoSrc: string) => {
     return (
       <PhotoWrapper>
         <Image
-          src={`${photoSrc}`}
+          src={`/images/${photoSrc}.jpg`}
           alt={`${props.title}`}
-          width={300}
-          height={300}
+          width={600}
+          height={400}
         />
       </PhotoWrapper>
     )
