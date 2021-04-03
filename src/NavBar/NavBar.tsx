@@ -79,13 +79,6 @@ export const NavBar = (props: NavBarProps) => {
             </StyledAnchor>
           </Link>
         </StyledListItem>
-        <StyledListItem>
-          <Link href="/voting">
-            <StyledAnchor currentPage={props.currentPage === 'Vote'}>
-              Vote!
-            </StyledAnchor>
-          </Link>
-        </StyledListItem>
       </StyledList>
     </StyledContainer>
   )
