@@ -3,7 +3,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export interface PhotoGalleryProps {
   entryNumber: number;
@@ -36,7 +36,7 @@ const Title = styled.h1`
 `
 
 const StyledAnchor = styled.a`
-font-family: Helvetica;
+  font-family: Helvetica;
   text-decoration: none;
   cursor: pointer;
   margin-top: 2vh;
@@ -50,27 +50,40 @@ const PhotoContainer = styled.div`
 `
 
 const PhotoWrapper = styled.div`
-  height: 60vh;
-  width: 90vh;
-  margin: 5vh;
+  position: relative;
+  height: auto;
+  width: auto;
+  margin: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 90vw;
+    margin: 20px;
+  }
 `
 
 const VideoWrapper = styled.div`
-  height: 60vh;
-  width: 90vh;
-  margin: 5vh;
+position: relative;
+  width: 90vw;
+  margin: 20px;
+
+  @media screen and (max-width: 600px) {
+    height: 60vh;
+    width: 90vw;
+    margin: 20px;
+  }
 `
 
+
 export const PhotoGallery = (props: PhotoGalleryProps) => {
-  console.log(props.photo1)
   const getPhoto = (photoSrc: string) => {
     return (
       <PhotoWrapper>
         <Image
           src={`/images/${photoSrc}.jpg`}
           alt={`${props.title}`}
-          width={900}
           height={600}
+          width={800}
+          layout="intrinsic"
         />
       </PhotoWrapper>
     )
@@ -90,7 +103,10 @@ export const PhotoGallery = (props: PhotoGalleryProps) => {
         {props.photo3 && getPhoto(props.photo3)}
         {props.videoLink && (
           <VideoWrapper>
-            <iframe src={props.videoLink} height="412" width="618"></iframe>
+            <iframe src={props.videoLink} style={{position: "relative",
+  height: "60vh",
+  width: "90vw",
+  margin: "20px"}}/>
           </VideoWrapper>
         )}
       </PhotoContainer>
