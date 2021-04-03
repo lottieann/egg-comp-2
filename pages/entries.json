@@ -82,11 +82,11 @@
   },
   "9": {
     "entryNumber": 9,
-    "title": "Jail Eggsotic",
-    "thumbnail": "JailEggsotic",
-    "photo1": "",
-    "photo2": "",
-    "photo3": "",
+    "title": "Search for the Many L-egg-ed Beast",
+    "thumbnail": "SearchForTheManyLeggedBeast1",
+    "photo1": "SearchForTheManyLeggedBeast1",
+    "photo2": "SearchForTheManyLeggedBeast2",
+    "photo3": "SearchForTheManyLeggedBeast3",
     "videoLink": ""
   },
   "10": {
@@ -96,7 +96,7 @@
     "photo1": "",
     "photo2": "",
     "photo3": "",
-    "videoLink": ""
+    "videoLink": "https://www.youtube.com/embed/-OqBTzU0hlQ"
   },
   "11": {
     "entryNumber": 11,
@@ -127,7 +127,7 @@
   },
   "14": {
     "entryNumber": 14,
-    "title": "Coque-en-bouche",
+    "title": "Coqembouche",
     "thumbnail": "",
     "photo1": "",
     "photo2": "",
@@ -136,11 +136,11 @@
   },
   "15": {
     "entryNumber": 15,
-    "title": "Search for the Many L-egg-ed Beast",
-    "thumbnail": "",
+    "title": "Jail Eggsotic",
+    "thumbnail": "JailEggsotic",
     "photo1": "",
     "photo2": "",
     "photo3": "",
-    "videoLink": ""
+    "videoLink": "https://www.youtube.com/embed/u_sFH0sJIwg"
   }
 }

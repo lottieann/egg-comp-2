@@ -3,7 +3,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export interface PhotoGalleryProps {
   entryNumber: number;
@@ -33,6 +33,7 @@ const TitleWrapper = styled.div`
 const Title = styled.h1`
   font-family: Helvetica;
   font-size: 30px;
+  text-align: center;
 `
 
 const StyledAnchor = styled.a`
