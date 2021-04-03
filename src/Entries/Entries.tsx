@@ -2,11 +2,22 @@ import * as React from 'react'
 
 import styled from 'styled-components'
 
-// import Image from 'next/image'
-// import Link from 'next/link'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import { Entry } from '../types'
 
 export interface EntriesProps {
-  entries: any
+  entries: {
+    entryNumber: number;
+    title: string;
+    thumbnail: string;
+    photo1?: string;
+    photo2?: string;
+    photo3?: string;
+    videoLink?: string;
+    additional?:string;
+  }
 }
 
 const Container = styled.div`
@@ -14,72 +25,77 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    font-family: Helvetica;
+  }
 `
 
-// const EntryList = styled.div`
-//   display: flex;
-//   flex-wrap: wrap;
-//   padding: 20px;
-// `
+const EntryList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+`
 
-// const EntryContaier = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 20px;
-// `
+const EntryContainer = styled.div`
+  margin: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 
-// const EntryPhoto = styled.div`
-//   height: 150px;
-//   width: 150px;
-//   background-color: lightgray;
-//   border: 2px solid gray;
-// `
+  p {
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+`
 
-// const StyledImage = styled(Image)``
 
-// const StyledAnchor = styled.a`
-//   text-decoration: none;
-//   font-weight: bold;
-//   font-family: Helvetica;
-//   cursor: pointer;
-// `
+const StyledAnchor = styled.a`
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Helvetica;
+  cursor: pointer;
+  padding: 2vh;
+`
 
-export const Entries = () => {
-  //const [imageError, setImageError] = React.useState(false)
-  // const makeEntriesList = (options) => {
-  //   return (
-  //     <EntryList>
-  //       {options.map((el, index) => {
-  //         return (
-  //           <EntryContaier key={index}>
-  //             {imageError ? (
-  //               <EntryPhoto />
-  //             ) : (
-  //               <StyledImage
-  //                 data-testid={`image-${index}`}
-  //                 src={`/${el.photo1}`}
-  //                 alt={`egg-${index}`}
-  //                 width={250}
-  //                 height={250}
-  //                 onError={() => setImageError(true)}
-  //               />
-  //             )}
-  //             <Link href={`/entries/${index}`}>
-  //               <StyledAnchor>{el.entryNumber}</StyledAnchor>
-  //             </Link>
-  //           </EntryContaier>
-  //         )
-  //       })}
-  //     </EntryList>
-  //   )
-  // }
+export const Entries = (props: EntriesProps) => {
+  
+  const makeEntriesList = (options: Entry) => {
+    return (
+      <EntryList>
+        {Object.values(options).map((el, index) => {
+          return (
+             //@ts-ignore
+            el.entryNumber !== 0 &&
+            <EntryContainer key={index}>
+                <Link href={`/entries/${index}`} key={index}>
+                  <Image
+                    data-testid={`image-${index}`}
+                    //@ts-ignore
+                    src={`/images/${el.thumbnail}.jpg`}
+                    alt={`egg-${index}`}
+                    width={400}
+                    height={265}
+                  />
+                </Link>
+              <Link href={`/entries/${index}`}>
+              {/* @ts-ignore */}
+                <StyledAnchor key={index}>{el.entryNumber}</StyledAnchor>
+              </Link>
+              {/* @ts-ignore */}
+              <p>{el.title}</p>
+            </EntryContainer>
+          )
+        })}
+      </EntryList>
+    )
+  }
 
   return (
     <Container>
-         <p>Entries will be able to view on Easter Satruday</p>
-      {/* <h1>Select an entry to view</h1>
-      <ul>{makeEntriesList(props.entries)}</ul> */}
+      <h1>Select an entry to view</h1>
+      <ul>{makeEntriesList(props.entries)}</ul>
     </Container>
   )
 }

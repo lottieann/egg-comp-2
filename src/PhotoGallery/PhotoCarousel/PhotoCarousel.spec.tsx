@@ -4,25 +4,13 @@ import 'jest-styled-components'
 
 import { render, fireEvent, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-import { PhotoCarousel, PhotoCarouselProps } from './PhotoCarousel'
+import { PhotoCarousel } from './PhotoCarousel'
 
 afterEach(cleanup)
 
-const photoInfo = {
-  entryName: 'Test Entry',
-  entryNumber: 0,
-  photo1: '/0.jpg',
-  photo2: '/1.jpg',
-  photo3: '/3.jpg',
-  vote1: '',
-  vote2: '',
-  vote4: '',
-  vote3: '',
-  vote5: '',
-}
 
 const setup = () => {
-  return <PhotoCarousel />
+  return <PhotoCarousel/>
 }
 
 const images = [
