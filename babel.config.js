@@ -15,7 +15,8 @@ module.exports = {
             plugins: [
                 '@babel/plugin-syntax-dynamic-import',
                 '@babel/plugin-proposal-class-properties',
-                "@babel/transform-runtime"
+                "@babel/transform-runtime",
+                "styled-components"
             ]
         },
         production: {
@@ -27,7 +28,8 @@ module.exports = {
             plugins: [
                 '@babel/plugin-syntax-dynamic-import',
                 '@babel/plugin-proposal-class-properties',
-                "@babel/transform-runtime"
+                "@babel/transform-runtime",
+                "styled-components",
             ]
         },
         development: {
@@ -39,7 +41,8 @@ module.exports = {
             plugins: [
                 '@babel/plugin-syntax-dynamic-import',
                 '@babel/plugin-proposal-class-properties',
-                "@babel/transform-runtime"
+                "@babel/transform-runtime",
+                "styled-components"
             ]
         }
     }
