@@ -13,6 +13,7 @@ export interface PhotoGalleryProps {
   photo2?: string;
   photo3?: string;
   videoLink?: string;
+  additional?: string;
 }
 
 const Container = styled.div`
@@ -63,7 +64,7 @@ const PhotoWrapper = styled.div`
 `
 
 const VideoWrapper = styled.div`
-position: relative;
+  position: relative;
   width: 90vw;
   margin: 20px;
 
@@ -73,7 +74,6 @@ position: relative;
     margin: 20px;
   }
 `
-
 
 export const PhotoGallery = (props: PhotoGalleryProps) => {
   const getPhoto = (photoSrc: string) => {
@@ -104,11 +104,19 @@ export const PhotoGallery = (props: PhotoGalleryProps) => {
         {props.photo3 && getPhoto(props.photo3)}
         {props.videoLink && (
           <VideoWrapper>
-            <iframe src={props.videoLink} style={{position: "relative",
-  height: "60vh",
-  width: "90vw",
-  margin: "20px"}}/>
+            <iframe
+              src={props.videoLink}
+              style={{
+                position: 'relative',
+                height: '60vh',
+                width: '90vw',
+                margin: '20px',
+              }}
+            />
           </VideoWrapper>
+        )}
+        {props.additional && (
+          <StyledAnchor href={`${props.additional}`}>Please click here to interact with this entry</StyledAnchor>
         )}
       </PhotoContainer>
     </Container>

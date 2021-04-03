@@ -12,7 +12,6 @@ const Gallery = () => {
     <React.Fragment>
       <NavBar currentPage="Gallery" />
       <Entries entries={entries}/>
-
     </React.Fragment>
   )
 }

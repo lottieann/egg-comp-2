@@ -26,6 +26,7 @@ const Gallery = () => {
           photo2={entry.photo2}
           photo3={entry.photo3}
           videoLink={entry.videoLink}
+          additional={entry.additional}
         />
       )}
     </React.Fragment>

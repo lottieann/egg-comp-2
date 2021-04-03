@@ -6,4 +6,5 @@ export type Entry = {
     photo2?: string;
     photo3?: string;
     videoLink?: string;
+    additional?: string;
 }

@@ -16,6 +16,7 @@ export interface EntriesProps {
     photo2?: string;
     photo3?: string;
     videoLink?: string;
+    additional?:string;
   }
 }
 
@@ -67,8 +68,8 @@ export const Entries = (props: EntriesProps) => {
           return (
              //@ts-ignore
             el.entryNumber !== 0 &&
-            <EntryContainer>
-                <Link href={`/entries/${index}`}>
+            <EntryContainer key={index}>
+                <Link href={`/entries/${index}`} key={index}>
                   <Image
                     data-testid={`image-${index}`}
                     //@ts-ignore
@@ -80,7 +81,7 @@ export const Entries = (props: EntriesProps) => {
                 </Link>
               <Link href={`/entries/${index}`}>
               {/* @ts-ignore */}
-                <StyledAnchor>{el.entryNumber}</StyledAnchor>
+                <StyledAnchor key={index}>{el.entryNumber}</StyledAnchor>
               </Link>
               {/* @ts-ignore */}
               <p>{el.title}</p>
