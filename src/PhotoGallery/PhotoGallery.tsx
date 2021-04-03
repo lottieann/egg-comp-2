@@ -98,6 +98,7 @@ export const PhotoGallery = (props: PhotoGalleryProps) => {
         </Link>
         <Title>{props.title}</Title>
       </TitleWrapper>
+      {props.title === "Jail Eggsotic" && <p>You can't see this video because of a copyright issue with YouTube</p>}
       <PhotoContainer>
         {props.photo1 && getPhoto(props.photo1)}
         {props.photo2 && getPhoto(props.photo2)}
