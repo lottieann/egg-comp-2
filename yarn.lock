@@ -1378,12 +1378,11 @@
     "@babel/plugin-transform-react-pure-annotations" "^7.16.0"
 
 "@babel/runtime-corejs3@^7.10.2":
-  version "7.16.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.16.3.tgz#1e25de4fa994c57c18e5fdda6cc810dac70f5590"
-  integrity sha512-IAdDC7T0+wEB4y2gbIL0uOXEYpiZEeuFUTVbdGq+UwCcF35T/tS8KrmMomEwEc5wBbyfH3PJVpTSUqrhPDXFcQ==
+  version "7.27.1"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.27.1.tgz#386c7a737dd893da056f6c7972526e827020b47d"
+  integrity sha512-909rVuj3phpjW6y0MCXAZ5iNeORePa6ldJvp2baWGcTjwqbBDDz6xoS5JHJ7lS88NlwLYj07ImL/8IUMtDZzTA==
   dependencies:
-    core-js-pure "^3.19.0"
-    regenerator-runtime "^0.13.4"
+    core-js-pure "^3.30.2"
 
 "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.8.4":
   version "7.16.3"
@@ -3248,10 +3247,10 @@ core-js-compat@^3.18.0, core-js-compat@^3.19.0:
     browserslist "^4.17.6"
     semver "7.0.0"
 
-core-js-pure@^3.19.0:
-  version "3.19.1"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.19.1.tgz#edffc1fc7634000a55ba05e95b3f0fe9587a5aa4"
-  integrity sha512-Q0Knr8Es84vtv62ei6/6jXH/7izKmOrtrxH9WJTHLCMAVeU+8TF8z8Nr08CsH4Ot0oJKzBzJJL9SJBYIv7WlfQ==
+core-js-pure@^3.30.2:
+  version "3.42.0"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.42.0.tgz#e86c45a7f3bdcb608823e872f73d1ad9ddf0531d"
+  integrity sha512-007bM04u91fF4kMgwom2I5cQxAFIy8jVulgr9eozILl/SZE53QOqnW/+vviC+wQWLv+AunBG+8Q0TLoeSsSxRQ==
 
 core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.12"
