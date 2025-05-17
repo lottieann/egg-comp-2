@@ -28,8 +28,14 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "isolatedModules": true,
-    "types": ["jest"],
-    "typeRoots": ["./types", "./node_modules/@types"]
+    "types": [
+      "jest"
+    ],
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
+    "incremental": true
   },
   "filesGlob": [
     "**/**/*.ts",
@@ -51,6 +57,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "./src/**/*.tsx", "./src/**/*.ts"
-, "utils/dbConnect.js", "next.config.js"  ]
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    "utils/dbConnect.js",
+    "next.config.js"
+  ]
 }
