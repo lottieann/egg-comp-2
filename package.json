@@ -37,7 +37,7 @@
     "jest-styled-components": "^7.0.3",
     "mongoose": "^6.13.6",
     "mpath": "0.8.4",
-    "next": "14",
+    "next": "16",
     "prop-types": "^15.7.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
